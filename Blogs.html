@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Blogs</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+
+        html {
+            font-family: proxima nova, sans-serif;
+
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+
+        .blue {
+            color: #1f98ff;
+
+        }
+
+        .bold {
+            font-weight: 500;
+        }
+
+        
+
+        .navWrapper {
+            width: 100%;
+            height:15px;
+
+        }
+
+        .navWrapper a {
+            float: left;
+            text-decoration: none;
+
+        }
+
+        .right {
+         float: right;
+          margin-right: 20px;
+
+        }
+
+        .blogMenu,
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .blogMenu img {
+            margin-right: 10px;
+        }
+
+        .search img {
+            margin-left: 10px;
+        }
+
+        .blogMenu p,
+        .search p {
+            color: #65747e;
+            font-size: 26px;
+        }
+
+        .blogMenu {
+            margin-left: 50px;
+        }
+
+        .search {
+            margin-right: 50px;
+        }
+
+        .navIcon {
+            margin-right: 30px;
+
+        }
+
+        .imageSection {
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .imageSectionWrapper {
+            width: 100%;
+            margin: auto;
+            display: block;
+            height: 800px;
+            background-image: url(Img/tec2.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .blogPostInfo {
+            position: absolute;
+            bottom: 0;
+            left: 15%;
+        }
+
+        .imageSectionWrapper h1 {
+            color: white;
+            background-color: #1c2329;
+            width: 680px;
+            text-align: center;
+            padding: 0.25em;
+            opacity: 0.97;
+            border-radius: 2px;
+            margin: 0 0 20px -60px;
+
+        }
+
+        .info {
+            color: white;
+            background-color: #1c2329;
+            width: 680px;
+            opacity: 0.97;
+            border-radius: 2px;
+            margin: 0 0 40px -30px;
+            padding: 0.25em 0.25em 0.25em 3em;
+
+        }
+
+        .info p {
+            margin: 15px 0;
+        }
+
+        .content {
+            width: 100%;
+
+        }
+
+        .contentWrapper {
+            width: 60%;
+
+            margin-left:20%;
+            dispaly: flex;
+
+        }
+
+        .mainContent {
+            flex: 3;
+
+
+        }
+
+
+        .mainContent p {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: #65747e;
+            line-height: 40px;
+
+
+        }
+
+        .mainContent h1 {
+            margin-top: 75px;
+
+        }
+
+        .mainContent h3 {
+            margin-top: 75px;
+
+        }
+
+        .mainContent img {
+            width: 90%;
+        }
+
+        .tags p {
+            display: inline-block;
+            margin: 30px 10px 0 10px;
+            background-color: #e4eaef;
+            border-radius: 100px;
+            padding: 0.1em 2em;
+
+
+        }
+
+        .relatedChild {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .relatedChild h3 {
+            margin: 0;
+
+        }
+
+        .relatedChild p {
+            margin: 0 0 5px 0;
+            line-height: 30px;
+
+        }
+
+        .relatedChild a {
+            text-decoration: none;
+
+        }
+
+        .relatedLeft,
+        .relatedRight {
+            flex: 1;
+
+        }
+
+        .related {
+            margin-bottom: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+          <!-- for navigation bar using js to close navigation bar -->
+        <div id="mynav" class="nav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="resume.html">Resume</a>
+  <a href="Blogs.html">Blogs</a>
+  <a href="research.html">Research</a>
+  <a href="contact.html">Contact Me</a>
+</div>
+    <!-- for open and closed navigation function-->
+<div id="main">
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+  <!-- External Js for navigation-->
+<script src="js/script.js"></script>
+   
+        
+          <!-- For navigation of blogs -->
+        <div class="navWrapper">
+            <a href="#"><img src="Img/Blogit_Logo.png" alt="blog it image"></a>
+            <a href="#">
+                <div class="blogMenu">
+                    <p> Categories</p>
+                </div>
+            </a>
+            <div class="right">
+                <a href="https://www.google.com/" class="search">
+                        <p>Search</p><img  src="Img/Search_icon.png"  alt="Search icon">
+                </a>
+                <a href="#" class="navIcon"><img src="Img/Bell_icon.png" alt="bell icon"></a>
+                <a href="#"><img src="Img/Profile_icon.png" alt="profile icon"></a>
+            </div>
+        </div>
+
+
+   <!-- For the first image of the bogs and for data inside blogs-->
+    <div class="imageSection">
+        <div class="imageSectionWrapper">
+            <div class="blogPostInfo">
+                <h1>Impact of Technology/Internet in our life </h1>
+                <div class="info">
+                    <p>By<span class="blue"> Namit Poudel</span> <span class="bold">2 days ago </span></p>
+                    <p>We are living in a period of trend setting innovation, where all aspects of our day by day lives is identified with the investigation of art somehow.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+          <!-- For content of the blogs-->
+    <div class="content">
+        <div class="contentWrapper">
+            <div class="mainContent">
+                <br>
+                <br>
+
+                <p>We are living in a period of trend setting innovation, where all aspects of our day by day lives is identified with the investigation of art somehow. There's no uncertainty that throughout the years innovation has been in charge of making incredibly valuable assets which put all the data we need readily available. The advancement of innovation has prompted such a large number of stunning disclosures, better offices, and better extravagances, yet at the equivalent has significantly changed our every day lives. Different exceptionally created contraptions, associated with the Internet, have changed the manner in which we convey, use humor, think about, work, shop, play, and act.
+
+                    It's not hard to perceive exactly the amount of the innovation we use regularly — from PCs, mobile phones, PCs, tablets and TVs to iceboxes and convection broilers that cook nourishment equitably. Originally created to serve faithfully to humanity, digital devices have also revealed their harmful impact on our lives. Many studies have come to the conclusion that our physical, social, and mental health suffers because of the excessive exposure to technology. Let’s discover the negative effects of technology on different aspects of our lives.
+
+                </p>
+                <h1>Negative effect of technology.</h1><br>
+                <h2>1.Social effect</h2>
+                <p>Tremendous utilization of tech arrangements is probably going to result in poor social abilities. Conferences are held over Skype and children visit in envoy instead of approach granny or get together with a companion face to face. On its essence, innovation seems to make worldwide system uniting individuals. Be that as it may, truth be told, this replaces genuine correspondence and finishes in social segregation. In addition, solid social bonds are supplanted with various shallow "companions" in informal organizations. Subsequently, individuals may feel desolate and discouraged. We have into the propensity for living in our very own reality and gazing at the gadget screen notwithstanding when encompassed by individuals. When we supplant genuine connection with online correspondence, we lose the capacity to peruse meaningful gestures like manner of speaking, outward appearance, non-verbal communication, and direct wording. Over it, fierce recreations and recordings execute sympathy and bring devastation into person's life.</p>
+
+                <h2>2.Physical effect</h1>
+                    <p>The most dangerous effects of technology is obesity. Being absorbed by a laptop or a tablet, people tend to snack a lot, keep late hours and exercise less. The more time you sit in front of the PC, the lesser is the blood circulation in your body, not to speak of the neck and head pain. Moreover, sedentary life is the reason why many people have a curved backbone and bad posture as a result. Constant staring at the screen might be the reason for headaches and poor eyesight. </p>
+                    <img src="Img/ian-baldwin-113578.jpg" alt="technology related image">
+                    <p>Also dancing with iPod in the street may seem cool, yet it may be harmful to your ears. Loud music in headphones is likely to cause hearing loss and ringing in the ears. Gadgets can also provoke the tendonitis in the thumb caused by repeated use of thumbs to push buttons on devices or playing too many games.</p>
+
+
+                    <h2>3.Educational effect</h1>
+                        <p>The Internet has become a great tool for learning. You can google any information you need rather than spend time in the library or attend the course online without leaving home. Yet, tech involvement doesn’t always guarantee the quality of education. Children sometimes overuse technology in the classroom which obviously affects the learning process in a negative way. Plagiarism and cheating have increased while analysis and critical thinking have declined. This puts young generation thinking abilities in jeopardy. Various studies claim that the more students use entertainment technologies like games or social media, the less they perform academically. Instead of reading and doing homework, modern kids indulge in entertainment.</p>
+                        <img src="Img/tec5.jpg" alt="technology related image">
+                        <p> A similar situation goes for the Internet: using the Web to search information is linked to higher grades while online gaming or socializing is associated with lower exam results. The reason for it is the distraction caused by games, messages, and videos. Young people have a hard time focusing attention at the lessons and resisting impulsive behavior.</p>
+
+                        <p>Technology has made life easier.There not only negativity of technology, it impact positively to human beign.So some of the positive impact of technology were discussed below:
+                            <h1>Positive impact of technology</h1><br>
+                            <h2>1.Helps to communicate with each other</h2>
+                            <p>The constant advances in innovation have prompted the presence of various new strategies for electronic correspondence, for example, long range interpersonal communication sites, messages, phone messages, and video meetings. These propelled correspondence tech instruments have helped us to dispose of time and separation as obstructions to powerful correspondence. This is useful not exclusively to our own connections, yet in addition to training and business. Innovation has improved social instruction by allowing youngsters the chance to speak with other kids from various nations and find out about various societies.</p>
+                            <img src="Img/tec3.jpg" alt="technology related image">
+                            <p>Even though technology is beneficial to communication and allows people to stay in touch, you need to find a balance between the cyber world and real world. These technological advancements might be incredible and important in today’s society, but you must be careful to not lose sight of the people who are physically around you. While communicating via social media might be fun and more convenient, it is also harmful to our social skills. Spending quality time with your friends and family to create memorable experiences is especially important for happiness.</p>
+
+
+                            <h2>2.Provide home Entertainment</h2>
+                            <p>Not that long ago, our entertainment experiences used to live in the moment they happened, exist in our memories and find their way in old-fashioned photographs on wall. Today, that has all changed due to the rapid growth of the Internet, mobile connectivity, and social networks.</p>
+                            <img src="Img/tec1.jpg" alt="technology related image">
+                            <p>The huge technological advance was the introduction of LCD TV. Compared to today’s LCD TVs, the previous television screens were inefficient, with lower definition and poor quality. Today we can not only enjoy improved home entertainment, but different types of home entertainment too: from smart TVs to Xbox units.</p>
+
+
+                            <h2>3.Convenience in Education</h2>
+                            <p>Technology has impacted every aspect of our lives today, and education is no exception. Technology has changed education in so many ways. First, technology has expanded the access to education and there are huge amounts of information (books, images, videos, audio) that are available through the Internet and that will enable you to empower yourself with knowledge. In addition, online courses are on the rise and most of them are free.</p>
+                            <img src="Img/tec4.jpg" alt="technology related image">
+                            <p>Nowadays students use modern technology in classrooms in order to learn better. For example, students can use iPads to share visual lessons, presentations, and examples with their peers. This has made learning much more convenient and more fun, but most importantly – more effective..</p>
+                            <h3>How the technology impact us?Lets look </h3>
+                
+                  <!-- For inserting videos -->
+                            <video width="500" height="420" controls>
+                                <source src="video/technologyImpact.mp4" type="video/mp4">
+                                <source src="video/technologyImpact.oggs" type="video/ogg">
+
+                            </video>
+
+  <!-- For tags -->
+                            <h3>Tags</h3>
+                            <div class="tags">
+                                <p>Accessibility</p>
+                                <p>Apps</p>
+                                <p>Artificial Intelligence</p>
+                                <p>Video</p>
+                            </div>
+                            <h3>Related</h3>
+                
+                  <!-- For related  section -->
+                            <div class="related">
+
+                                <div class="relatedChild">
+                                    <div class="relatedLeft">
+                                        <img src="Img/alexander-wang-217719.jpg" alt="camere image">
+                                    </div>
+                                    <div class="relatedRight">
+                                        <h3 onclick="myFunction()" id="demo">Find The perfect Shot</h3>
+                                        <p>By ANCHOVY <b>August 4,2017 </b></p>
+                                        <p>Being different is what it is all about. Let’s face it, the difference in your approach is what is going to get you noticed.......</p>
+                                        <a href="https://anchovyinc.com/blog/photography-tips-bloggers-take-good-photos-blogs/">
+                                            <p><span class="blue">Read more</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="relatedChild">
+                                    <div class="relatedLeft">
+                                        <img src="Img/dorn.jpg" alt="drone  image">
+                                    </div>
+                                    <div class="relatedRight">
+                                        <h3 onclick="myFunction2()" id="demo2">The best drones for 2018 </h3>
+                                        <p>By Romain Baud <b>21 June 2018</b></p>
+                                        <p>This mission is a follow-up of the Eigenthal and Rothenthurm bogs mapping, previously conducted with Pro Natural .......</p>
+                                        <a href="http://droneadventures.org/drones-help-saving-the-steinmoosli-and-balmoos-bogs/">
+                                            <p><span class="blue">Read more</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                 </div>
+                
+            <!-- function for changing text  -->
+                <script>
+function myFunction() {
+  var txt;
+  if (confirm("Press any button you like")) {
+    txt = "Please press Read more to learn details about the blogs";
+  } else {
+    txt = "Find The perfect Shot";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+                    
+  //function for changing text 
+                    
+ function myFunction2() {
+  var txt;
+  if (confirm("Press a button!")) {
+    txt = "Please press Read more to learn details about the blogs";
+  } else {
+    txt = "The best drones for 2018";
+  }
+  document.getElementById("demo2").innerHTML = txt;
+}
+                                                                           
+</script>
+
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+        <!--it is for the footer parts which described about the footer parts-->
+        <footer>
+            
+    <div id="color">
+        <a href="Home.html"> <img src="Img/Nlogo.jpg" id="cafelogo"></a>
+    </div>
+            <p id="foot">privacy policy || Terms of Use || contact us</p>
+            <p id="bistro"><i>Namit poudel
+                    <br>
+                    Dillibazer, kathmandu , nepal</i></p>
+            <div id="youtube">
+                <p id="font">follow me on:</p> <a href="http://youtube.com"><img id="photo" src="Img/YOUTUBE.png"></a>
+                <a href="http://www.instagram.com">
+                    <img src="Img/ins.png" id="instagram"></a>
+            </div>
+            <details>
+                <summary id="reserved">© 2019 Namit Poudel all right reserved.</summary>
+            </details>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
