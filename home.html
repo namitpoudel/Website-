@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Namit Poudel ">
+    <meta name="revised" content="2019/04/14">
+    <meta http-equiv="refresh" content="20">
+    <meta name="description" content=" Portfolio">
+    <meta name="keyword" content="Portfolio,resume, Blogs, Research,  contact ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home </title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <style type="text/css">
+        .myimage {
+            border-radius: 50%;
+            width="300";
+            height="300";
+            margin-left: 30%;
+        }
+
+        .text {
+            position: absolute;
+            bottom: -3%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-style: oblique;
+        }
+
+        .text:hover {
+            font-size: 150%;
+        }
+
+
+        .info {
+            background-color: darkolivegreen;
+            position: relative;
+            top: 700px;
+            height: 700px;
+            text-align: inherit;
+
+        }
+
+        .time {
+            margin-left:40%;
+
+        }
+        /* Slideshow container */
+        .slideshow-container {
+            
+            padding-left: 10px;
+            max-width: 900px;
+            position: absolute;
+            border-radius: .1em;
+            left: 278px;
+            bottom:-80%;
+            
+
+        }
+
+        .mySlides {
+            border-radius: .3em;
+            display: none;
+            opacity:1;
+            
+         
+
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 1s ease-in;
+            border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            top: 50%;
+            color: red;
+            background-color: transparent;
+            right: 0px;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev {
+            top: 50%;
+            color: red;
+            background-color: transparent;
+            left: 100px;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: #f2f2f2;
+        }
+          /* Number text (1/3 etc) */
+        .numbertext {
+            color: sandybrown;
+            font-size: 12px;
+            padding: 20px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+    </style>
+</head>
+
+<body bgcolor="#F5D6C6">
+    <div>
+ <!-- for navigation bar using js to close navigation bar -->
+        <div id="mynav" class="nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&timews;</a>
+            <a href="home.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="Blogs.html">Blogs</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+ <!-- timer adding -->
+<div class="time">
+        <h2>You have visited my website At</h2>
+
+        <p id="timer"></p>
+        </div>
+<!-- JS for date and time -->
+<script>
+var date = new Date();
+document.getElementById("timer").innerHTML = date;
+</script>
+            <!-- for open and closed navigation function-->
+        <div id="main">
+
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+  <!-- External Js for navigation-->
+        <script src="js/script.js"></script>
+
+        <div>
+            <img class="myimage" src="Img/myimage2.jpg" alt="my picture">
+            <h1>
+                <p class="text"> Hi! Welcome to my website </p>
+            </h1>
+        </div>
+
+        
+        
+        <!-- for image  slider -->
+
+        <!--picture sliding -->
+        <div class="slideshow-container">
+            <div class="mySlides ">
+                <div class="numbertext">1 / 3</div>
+                <img src="Img/myimage1.jpg" style="width:1020px; height: 555px; border-radius: 1em; border-color: #9999ff">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 2</div>
+                <img src="Img/pic1.jpg" style="width:1020px; height: 555px; border-radius: 1em; border-color: #9999ff">
+            </div>
+
+            <div class="mySlides ">
+                <div class="numbertext">1 / 3</div>
+                <img src="Img/myimage4.jpg" style="width:1020px; height: 555px; border-radius: 1em; border-color: #9999ff">
+            </div>
+            <!-- for prev and next button to work  -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+     
+         <button type="hire" value="Hire"><a href="contact.html">Hire Me </a></button>
+               </div>
+
+        <script type="text/javascript">
+            //it is used for sliding the photo horizontally in the body.
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n){
+                showSlides(slideIndex+=n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slide = document.getElementsByClassName("mySlides");
+                
+                if (slideIndex > slide.length) {
+                    slideIndex = 1}
+                if (n < 1) {slideIndex = slide.length}
+                for (i = 0; i < slide.length; i++) {
+                    slide[i].style.display = "none";
+
+                }
+                
+                slide[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 3400); // Change image every 3 seconds
+            }
+// for automatic sliding after few seconds             
+var slideIndex = 0;
+show();
+
+function show() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}    
+  x[slideIndex-1].style.display = "block";  
+  setTimeout(show, 3000); // Change image every 3 seconds
+}
+    </script>
+        <div class="info">
+            <h2 style="text-align: center">My website info</h2>
+            <p style="padding: 20px">This websites was created to provides information about me.By the helps of this websites you will get each and every information of mine.
+                To fullfill the coursework requirment,i made a portfolio website with at least 5 web pages including CV and blogs explaining how technology has
+                affected them in their daily lives. The website also include
+                a research section where i looked into five
+                different web pages as reference for my website and compare
+                my website with them.</p>
+        </div>
+
+        <!--it is for the footer parts which described about the footer parts-->
+
+        <footer>
+            <div id="color">
+                <a href="home.html"> <img src="Img/Nlogo.jpg" id="cafelogo"></a>
+            </div>
+            <p id="foot">privacy policy || Terms of Use || contact us</p>
+            <p id="bistro"><i>Namit poudel
+                    <br>
+                    Dillibazer, kathmandu , nepal</i></p>
+            <div id="youtube">
+                <p id="font">follow me on:</p> <a href="http://youtube.com"><img id="photo" src="Img/YOUTUBE.png"></a>
+                <a href="http://www.instagram.com">
+                    <img src="Img/ins.png" id="instagram"></a>
+            </div>
+            <details>
+                <summary id="reserved">© 2019 Namit Poudel all right reserved.</summary>
+            </details>
+        </footer>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
