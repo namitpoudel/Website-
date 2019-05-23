@@ -1,0 +1,172 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	font-weight: normal;
+     font-family: "Verdana", "Lato", sans-serif;
+}
+
+
+.nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #f1f1f1;
+}
+
+.nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+        /*it is the logo design for the cafe and its hovering
+        */
+        #cafelogo {
+            position: absolute;
+            height: 100px;
+            border-radius: 50px;
+            width: 100px;
+            top: 2px;
+            left: 3px;
+            border-color: #e2e393;
+        }
+
+        #cafelogo:hover {
+            cursor: pointer;
+            transform: skew(10deg);
+            box-shadow: 1px 2px 3px 4px #181b35;
+        }
+
+        /*this is the menu bar header for positioning.
+        */
+        #color {
+            color: #3b8775;
+            width: 1313px;
+            height: 105px;
+            position: absolute;
+            left: 100px;
+            
+                    
+
+        }
+
+        #Namit {
+            position: absolute;
+            left: 1040px;
+            top: 16px;
+            color: white;
+            font-size: 13px;
+            display: block;
+            cursor: pointer;
+        }
+
+        /* Slideshow container */
+
+
+
+
+
+       
+
+
+
+        /*it is for the footer part with its height and width of it. */
+        footer {
+
+            background-color: #8f9994;
+            position: relative;
+            top: 600px;
+            height: 180px;
+
+
+        }
+
+        footer p {
+            position: absolute;
+            top: 100px;
+            left: 10px;
+        }
+
+        footer #bistro {
+            position: absolute;
+            top: 40px;
+            padding-left: 500px;
+            padding-right: 500px;
+            left: 10px;
+        }
+
+        /**it is  for the summary and details  of the footer part */
+        footer summary {
+            position: absolute;
+            top: 5px;
+            left: 500px;
+        }
+
+        footer #youtube {
+            text-align: center;
+            font-family: cursive;
+        }
+
+        footer #photo {
+            width: 60px;
+            height: 60px;
+            border-radius: 23px;
+
+        }
+
+        #photo {
+            position: absolute;
+            top: 90px;
+            left: 1220px;
+        }
+
+        #instagram {
+            position: absolute;
+            top: 109px;
+            left: 1130px;
+        }
+
+        footer #instagram {
+            width: 30px;
+            height: 30px;
+            border-radius: 20px;
+
+        }
+
+        #font {
+            position: absolute;
+            top: 110px;
+            left: 1000px;
+        }
