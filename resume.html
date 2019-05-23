@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume </title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image:url(Img/bgforresume.jpg);
+
+        }
+
+        .border {
+            border-style: dashed;
+            border-width: 3px;
+            border-color: darkgoldenrod;
+            margin-top: 80px;
+        }
+
+        #myimg {
+            height: 500px;
+            width: 900px;
+            margin-left: 90px;
+            padding: 50px;
+
+        }
+
+        #cvpic {
+
+            float: right;
+            margin-right: 2%;
+            margin-top: 2%;
+        }
+
+        td {
+            padding: 2px;
+            border: 2px solid #f4b042;
+        }
+
+        table {
+            border: 4px dashed black;
+
+        }
+
+        #heading {
+            font-weight: bold;
+        }
+
+        .resume {
+            background-color: darkslategray;
+            margin-top: 0%;
+            margin-right: 20%;
+            margin-left: 20%;
+            margin-bottom: 30px;
+            padding: 2%;
+        }
+
+        .details {
+            margin-left: 40px;
+        }
+
+
+
+
+
+
+        .skillRate {
+            width: 60%;
+            background-color: darkslategray;
+            margin: auto;
+            border: 3px solid skyblue;
+            padding: 10px;
+
+
+        }
+
+        .skills {
+            text-align: right;
+            padding: 10px;
+            color: white;
+        }
+
+        .html {
+            width: 70%;
+            background-color: #4CAF50;
+        }
+
+        .css {
+            width: 60%;
+            background-color: #2196F3;
+        }
+
+        .js {
+            width: 40%;
+            background-color: #f44336;
+        }
+
+        .php {
+            width: 40%;
+            background-color: #808080;
+        }
+
+        .python {
+            width: 50%;
+            background-color: #dff442;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- for navigation bar using js to close navigation bar -->
+        <div id="mynav" class="nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="Blogs.html">Blogs</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+        <!-- for open and closed navigation function-->
+        <div id="main">
+
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <!-- External Js for navigation-->
+
+        <script src="js/script.js"></script>
+
+        <!-- for resume page, data inserted in that resume and image too-->
+        <div class=resume>
+            <p><img id="cvpic" src="Img/mypic.jpg" alt="Picture" style="width:170px;height:139px;border:1px solid black;margin-left:15px;"><span style="font-weight:bold;font-size:30px"> Namit POUDEL</ span> <br /> <span style="font-weight:bold;font-size:15px">WEB SITES DEVELOPER and SOFTWARE DEVELOPER</span><br />
+                    <span style="font-weight:bold;font-size:15px">Dillibazar,Kathmandu,Nepal </span>
+                    <h3>EMAIL ADDRESS: namitpoudel9@gmail.com</h3><br />
+                    <span style="font-weight:bold;font-size:15px">CONTACT NO: 9842756111</span><br />
+
+
+            </p>
+            <p class="border"></p>
+            <br />
+            <br />
+            <h3> PERSONAL INFORMATION<br /><br /></h3>
+            <ul class="details">
+                <li>
+                    <p>Date Of Birth
+                        <span style="font-weight:bold;word-spacing: 30px">: </span>August 20 ,1999</p>
+                </li>
+                <li>
+                    <p>Age
+                        <span style="font-weight:bold;word-spacing: 105px">: </span>20</p>
+                </li>
+                <li>
+                    <p>Place Of Birth
+                        <span style="font-weight:bold;word-spacing: 26px">: </span>Jhapa,Nepal</p>
+                </li>
+                <li>
+                    <p>Sex
+                        <span style="font-weight:bold;word-spacing: 105px">: </span>Male</p>
+                </li>
+                <li>
+                    <p>Marriage Status
+                        <span style="font-weight:bold;word-spacing: 41px">: </span>Single</p>
+                </li>
+                <li>
+                    <p>Height
+                        <span style="font-weight:bold;word-spacing: 80px">: </span>5'7"</p>
+                </li>
+
+                <li>
+                    <p>Father's Name
+                        <span style="font-weight:bold;word-spacing: 18px">: </span>Chhabilal Poudel</p>
+                </li>
+                <li>
+                    <p>Mother's Name
+                        <span style="font-weight:bold;word-spacing: 14px">: </span>Bhumika Poudel</p>
+                </li>
+                <li>
+                    <p>Religion
+                        <span style="font-weight:bold;word-spacing: 72px">: </span>Hindu</p>
+                </li>
+                <li>
+                    <p>Language
+                        <span style="font-weight:bold;word-spacing: 56px">: </span>Nepali,English, Hindi </p>
+                </li>
+
+            </ul>
+
+            <br />
+            <br />
+
+            <h3> Educational Qualifications</h3>
+            <br />
+            <!-- for table to dispaly educational qualification-->
+            <table>
+                <tr id="heading">
+                    <td>Qualification</td>
+                    <td>Board</td>
+                    <td>Percentage / Grades</td>
+                    <td>Year</td>
+                </tr>
+                <tr>
+                    <td>B.Sc. (Hons)- Computing</td>
+                    <td>Islington College, London Metropolitan University</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>+2(Science Faculty)</td>
+                    <td>Milestone International College, National Examination Board(NEB)</td>
+                    <td>A Grade</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>SLC(School Leaving Certificate)</td>
+                    <td> Pathivara educational academy School, National Education Board (NEB)</td>
+                    <td>A+ Grade</td>
+                    <td>2016</td>
+                </tr>
+
+            </table>
+            <br />
+            <br />
+            <br />
+
+            <h3> COMPUTATIONAL SKILLS<br /><br /></h3>
+
+            <ul class="details">
+                <li>
+                    <p>Well knowledge of programming in<span style="font-weight:bold;font-size:15px"> PHP, Java, Python,HTML, CSS, Javascript.</span></p>
+                </li>
+                <li>
+                    <p>familiar with operating platforms <span style="font-weight:bold;font-size:15px">Windows latest versions, Linux.</span></p>
+                </li>
+                <li>
+                    <p>Well knowledge of <span style="font-weight:bold;font-size:15px">DBMS using MySQL, oracal, SQL as a platform</span></p>
+                </li>
+                <li>
+                    <p>Confident in oral and written <span style="font-weight:bold;font-size:15px">communication</span></p>
+                </li>
+                <br />
+                <br />
+                <br />
+
+            </ul>
+        </div>
+
+        <!-- for prograssion bar to measure my skill in seperate container for each iteam-->
+        <div class="skillRate">
+            <h1>My Skills</h1><br><br>
+
+            <p>HTML</p>
+            <div class="skills html">70%</div>
+        </div>
+
+        <div class="skillRate">
+            <p>CSS</p>
+            <div class="skills css">60%</div>
+        </div>
+
+
+        <div class="skillRate">
+            <p>JavaScript</p>
+            <div class="skills js">40%</div>
+        </div>
+
+        <div class="skillRate">
+            <p>PHP</p>
+
+            <div class="skills php">40%</div>
+        </div>
+
+        <div class="skillRate">
+            <p>python</p>
+
+            <div class="skills python">50%</div>
+        </div>
+
+
+
+
+        <div>
+            <!--it is for the footer parts which described about the footer parts-->
+            <footer>
+
+                <div id="color">
+                    <a href="home.html"> <img src="Img/Nlogo.jpg" id="cafelogo"></a>
+                </div>
+
+                <p id="foot">privacy policy || Terms of Use || contact us</p>
+                <p id="bistro"><i>Namit poudel
+                        <br>
+                        Dillibazer, kathmandu , nepal</i></p>
+                <div id="youtube">
+                    <p id="font">follow me on:</p> <a href="http://youtube.com"><img id="photo" src="Img/YOUTUBE.png"></a>
+                    <a href="http://www.instagram.com">
+                        <img src="Img/ins.png" id="instagram"></a>
+                </div>
+                <details>
+                    <summary id="reserved">© 2019 Namit Poudel all right reserved.</summary>
+                </details>
+            </footer>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
